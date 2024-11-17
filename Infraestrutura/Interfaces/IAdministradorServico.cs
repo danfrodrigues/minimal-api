@@ -12,5 +12,9 @@ namespace minimal_api.Infraestrutura.Interfaces
 #pragma warning disable CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
         Administrador? Login(LoginDTO loginDTO);
 #pragma warning restore CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
+        Administrador Incluir (Administrador administrador);
+        Administrador? BuscaPorID (int id);
+        
+        List<Administrador> Todos(int? pagina);
     }
 }

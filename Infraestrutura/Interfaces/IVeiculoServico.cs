@@ -10,7 +10,7 @@ namespace minimal_api.Infraestrutura.Interfaces
     public interface IVeiculoServico
     {
 #pragma warning disable CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
-        List<Veiculo> Todos(int pagina = 1, string? nome = null, string? marca = null);
+        List<Veiculo> Todos(int? pagina = 1, string? nome = null, string? marca = null);
         Veiculo? BuscaPorId(int id);
         void Incluir(Veiculo veiculo);
         void Atualizar(Veiculo veiculo);
